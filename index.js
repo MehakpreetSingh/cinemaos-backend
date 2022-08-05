@@ -26,6 +26,7 @@ app.use(cors()) ;
 app.use("/movies" , require('./routes/getmovies') ) ;
 app.use("/tvshows" , require('./routes/getTvShows') ) ;
 app.use("/series" , require('./routes/getSeries') ) ;
+app.use('/auth' ,require('./routes/auth') )
 
 app.listen(port , () => {
     console.log(`https://localhost:${port}`)
